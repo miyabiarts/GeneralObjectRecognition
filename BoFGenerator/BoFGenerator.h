@@ -25,9 +25,17 @@ public:
     // ディレクトリ以下の全画像をBoF特徴に変換
     std::string root = "../101_ObjectCategories/";
     std::vector< std::string > directories = enumerateFiles( root );
+    int cnt = 0;
     for( std::vector< std::string >::iterator itr = directories.begin() ; itr != directories.end() ; ++itr )
     {
       std::vector< std::string > files = enumerateFiles( root + "/" + *itr );
+
+      if( cnt < 6 ) 
+      {
+        ++cnt;
+        continue;
+      }
+      ++cnt;
 
       for( std::vector< std::string >::iterator fn_itr = files.begin() ; fn_itr != files.end() ; ++fn_itr )
       {
