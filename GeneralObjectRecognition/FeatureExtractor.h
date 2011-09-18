@@ -1,10 +1,19 @@
+#pragma once
+
 #include <opencv2/opencv.hpp>
 
 //
 class FeatureExtractor
 {
 public:
-  void operator()( const std::string &filename )
+
+  void operator()()
+  {
+
+  }
+
+  // 1枚の画像から特徴抽出
+  void extract( const std::string &filename )
   {
     // グレイスケールで入力画像を読み込み
     cv::Mat_< unsigned char > in = cv::imread( filename, 0 );
