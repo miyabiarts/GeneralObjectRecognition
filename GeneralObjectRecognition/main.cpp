@@ -1,10 +1,10 @@
-#include "FeatureExtractor.h"
+#include "Recognizer.h"
 
 //
 int main()
 {
-  FeatureExtractor extractor;
-  extractor();
+  Recognizer recognizer;
+  recognizer();
 
   return 0;
 }
