@@ -22,15 +22,16 @@ public:
     {
       // ファイルから特徴量を入力
       // ランダムにファイルは決定
-      const std::string &file = files[ rng( files.size() ) ];
+      const std::string &file = std::string( "../features/" ) + files[ rng( files.size() ) ];
       
       cv::FileStorage reader( file, cv::FileStorage::READ );
-      cv::FileNode node = reader.getFirstTopLevelNode();
       cv::Mat_< float > descriptors;
-      cv::read( node[ "descriptors" ], descriptors );
+      reader[ "descriptors" ] >> descriptors;     
 
       // 特徴量を追加
       trainer.add( descriptors );
+
+      std::cout << trainer.descripotorsCount() << std::endl;
     }
 
     // クラスタリングによりVisualWordを算出
@@ -39,6 +40,5 @@ public:
     // VisualWordをファイルに保存
     cv::FileStorage writer( "../visualwords.txt", cv::FileStorage::WRITE );
     cv::write( writer, "visualwords", visualwords );
-
   }
 };
