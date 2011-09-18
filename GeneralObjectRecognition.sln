@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FeatureExtractionTest", "Fe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7994DA6-9FDA-44A7-9AEC-F2B709D5170A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VisualWordGenerator", "VisualWordGenerator\VisualWordGenerator.vcxproj", "{1C755B6A-956D-464F-990C-009BEFA6A73A}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = GeneralObjectRecognition.vsmdi
@@ -24,6 +26,10 @@ Global
 		{C3175318-D363-4273-8A13-45E3AE44281D}.Debug|Win32.Build.0 = Debug|Win32
 		{C3175318-D363-4273-8A13-45E3AE44281D}.Release|Win32.ActiveCfg = Release|x64
 		{C3175318-D363-4273-8A13-45E3AE44281D}.Release|Win32.Build.0 = Release|x64
+		{1C755B6A-956D-464F-990C-009BEFA6A73A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C755B6A-956D-464F-990C-009BEFA6A73A}.Debug|Win32.Build.0 = Debug|Win32
+		{1C755B6A-956D-464F-990C-009BEFA6A73A}.Release|Win32.ActiveCfg = Release|x64
+		{1C755B6A-956D-464F-990C-009BEFA6A73A}.Release|Win32.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
